@@ -10,7 +10,8 @@
 
 **Steps**
 - Install driver for Hyperpixel screen, instruction on pimoroni website, link above
-- `sudo apt install imv python3-mqtt-paho` (Won't work with mqtt-paho version 2.0. Only works with 1.6.)
+- `sudo apt install imv python3-mqtt-paho` 
+  - Won't work with mqtt-paho version 2.0. Only works with 1.6.)
 - Create services
   - `sudo nano /lib/systemd/system/face-get-image.service`
   - `sudo nano /lib/systemd/system/face-refresh-screen.service`

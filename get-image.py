@@ -28,7 +28,7 @@ def connect_mqtt():
 def subscribe(client: mqtt_client):
     def on_message(client, userdata, msg):
         y = json.loads(msg.payload.decode())
-        print(f"Recieved from topic '{msg.topic}' \n")
+        print(f"Received from topic '{msg.topic}' \n")
         #print(json.dumps(y, indent=4))
         #print("\n \n")
 

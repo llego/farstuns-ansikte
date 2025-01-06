@@ -1,6 +1,6 @@
 # Farstuns ansikte
 
-*Links*
+**Links**
 - https://shop.pimoroni.com/products/hyperpixel-4?variant=12569485443155
 - https://highvoltages.co/iot-internet-of-things/mqtt/image-using-mqtt-protocol/
 - https://pimylifeup.com/raspberry-pi-photo-frame/
@@ -8,7 +8,7 @@
 - https://man.archlinux.org/man/imv.1.en
 - https://manpages.debian.org/testing/imv/imv-wayland.5.en.html
 
-*Steps*
+**Steps**
 - Install driver for Hyperpixel screen, instruction on pimoroni website, link above
 - `sudo apt install imv python3-mqtt-paho` (Won't work with mqtt-paho version 2.0. Only works with 1.6.)
 - Create services
@@ -56,6 +56,9 @@ WantedBy=graphical.target
 ```
 
 Enable and start services
-`sudo systemctl enable face-get-image.service --now`
-`sudo systemctl enable face-refresh-screen.service --now`
+```
+sudo systemctl enable face-get-image.service --now
+sudo systemctl enable face-refresh-screen.service --now
+```
+
 
